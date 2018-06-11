@@ -13,6 +13,8 @@ import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component
 // Modules
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { SharedModule } from './shared/shared.module';
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
