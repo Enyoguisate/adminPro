@@ -4,6 +4,9 @@ import { NgModule } from '@angular/core';
 // Routes
 import { APP_ROUTES } from './app.routes';
 
+// Services
+import { ServiceModule } from './services/service.module';
+
 // Components
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
@@ -14,7 +17,7 @@ import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component
 import { PagesModule } from './pages/pages.module';
 import { SharedModule } from './shared/shared.module';
 import { FormsModule } from '@angular/forms';
-
+import { SettingsService } from './services/service.index';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     APP_ROUTES,
     PagesModule,
-    FormsModule
+    FormsModule,
+    ServiceModule
   ],
   providers: [],
   bootstrap: [AppComponent]

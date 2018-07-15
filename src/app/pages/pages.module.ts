@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 
 // Components
-import { PagesComponent } from '../pages/pages.component';
-import { DashboardComponent } from '../pages/dashboard/dashboard.component';
-import { ProgressComponent } from '../pages/progress/progress.component';
-import { Graficas1Component } from '../pages/graficas1/graficas1.component';
+import { PagesComponent } from './pages.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProgressComponent } from './progress/progress.component';
+import { Graficas1Component } from './graficas1/graficas1.component';
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
 
@@ -15,6 +15,7 @@ import { ChartsModule} from 'ng2-charts';
 
 // Routes
 import { PAGES_ROUTES } from './pages.routes';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 
 
@@ -25,7 +26,8 @@ import { PAGES_ROUTES } from './pages.routes';
         Graficas1Component,
         ProgressComponent,
         IncrementadorComponent,
-        GraficoDonaComponent
+        GraficoDonaComponent,
+        AccountSettingsComponent
     ],
     exports: [
         DashboardComponent,
